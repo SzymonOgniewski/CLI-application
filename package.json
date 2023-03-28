@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "name": "cli-application",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SzymonOgniewski/CLI-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SzymonOgniewski/CLI-application/issues"
+  },
+  "homepage": "https://github.com/SzymonOgniewski/CLI-application#readme"
+}
