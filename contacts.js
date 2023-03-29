@@ -7,7 +7,7 @@ function listContacts() {
   fs.readFile(contactsPath, "utf-8", (error, data) => {
     if (error) throw error;
     const contacts = JSON.parse(data);
-    console.log(contacts);
+    console.table(contacts);
   });
 }
 
@@ -29,6 +29,7 @@ function removeContact(contactId) {
       if (error) throw error;
       console.log(`contact with id ${contactId} has been removed`);
     });
+    console.table(newContacts);
   });
 }
 
@@ -37,7 +38,7 @@ function addContact(name, email, phone) {
     if (error) throw error;
     const contacts = JSON.parse(data);
     const newContact = {
-      id: contacts.length + 1,
+      id: (contacts.length + 1).toString(),
       name,
       email,
       phone,
@@ -47,6 +48,7 @@ function addContact(name, email, phone) {
       if (error) throw error;
       console.log(`Contact ${name} has been added`);
     });
+    console.table(updatedContacts);
   });
 }
 
